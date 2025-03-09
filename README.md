@@ -28,16 +28,15 @@ The Titanic dataset challenge involves analyzing data from the tragic Titanic sh
    - Normalize and scale numerical variables.
 
 4. **Modeling:**
-   - Train machine learning models, such as logistic regression, random forests, or gradient boosting.
+   - Train machine learning models, such as logistic regression, decision trees, random forests, and gradient boosting.
    - Evaluate models using accuracy, precision, recall, and ROC-AUC.
 
 ## 📊 Results
 
-- The best-performing model achieved an accuracy of **X%** on the test set.
-- [Optional: Highlight any interesting discoveries or challenges.]
+- The best-performing model achieved an accuracy of **84.4%** on the test set.
 
 ## 🛠️ Tools and Technologies
 
 - **Languages**: Python 🐍
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost
+- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 - **Environment**: Jupyter Notebook
