@@ -33,7 +33,7 @@ The Titanic dataset challenge involves analyzing data from the tragic Titanic sh
 
 ## 📊 Results
 
-**Overall best-performing model? ## Logsitic Regression**
+**Overall best-performing model? Standard Logsitic Regression**
 - Overall accuracy of 84.4%
 - Its Precision, Recall and F1 Scores for Non-Survivors and Survivors were consistently 87% and 81%.
   
@@ -41,7 +41,9 @@ The Titanic dataset challenge involves analyzing data from the tragic Titanic sh
 - Overall accuracy of 83.8
 - Prescision scores were 89% for Non-Survivors and 78% for Survivors.
 - Recall scores were 83% for Non-Survivors and 85% for Survivors.
--- While the Precision Score drops from 81% to 78%, the Recall Score rises from 81% to 85%. Meaning that while there is an increase of false positives, there is also an increase of true positives.
+
+**Comparison**
+- While the Precision Score drops from 81% to 78%, the Recall Score rises from 81% to 85%. Meaning that while there is an increase of false positives, there is also an increase of true positives. Essentially there is a trade off and it depends what we wnt our model to be better at. When it comes to identifying Survivors, the Standard Logistic Regression model has less false positives, those that were wrongly assumed to be survivors, and the Class-Weighted model has a higher percentage chance of identifying True Positives, those that actually survived.
 
 **Why was the Class-Weighted model slightly more effective in identifying Survivors?**
 - It helped to address class imbalance in the dataset. Class imbalance occurs when one class is significantly underrepresented compared to the others, which can lead to biased predictions favoring the majority class. In the case of the Titanic dataset, the number of Non-Survivors is significantly more than the number Survivors making it the majority class. While the Standard Logistic Regression model did work well overall, all instances (passengers) contributed equally to the loss function. However, in the Class-Weighted model, "weights" are applied to the loss function based on the class. The weight for each class is typically inversely proportional to its frequency in the training set.
