@@ -33,12 +33,12 @@ The Titanic dataset challenge involves analyzing data from the tragic Titanic sh
 
 ## 📊 Results
 
-**Overall best-performing model? Standard Logsitic Regression**
-- Overall accuracy of 84.4%
+**Overall best-performing model? Standard Logistic Regression**
+- Overall Accuracy Score of 84.4%
 - Its Precision, Recall and F1 Scores for Non-Survivors and Survivors were consistently 87% and 81%.
   
 **Best model for identifying Survivors? Class-Weighted Logistic Regression**
-- Overall accuracy of 83.8
+- Overall Accuracy Score of 83.8%
 - Prescision scores were 89% for Non-Survivors and 78% for Survivors.
 - Recall scores were 83% for Non-Survivors and 85% for Survivors.
 
