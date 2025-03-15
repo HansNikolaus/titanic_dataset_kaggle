@@ -34,19 +34,19 @@ The Titanic dataset challenge involves analyzing data from the tragic Titanic sh
 ## 📊 Results
 
 - The best-performing model was the **Logsitic Regression**, which achieved an overall accuracy of **84.4%** on the test set.
-      - Its Precision, Recall and F1 Scores for Non-Survivors and Survivors were consistently 87% and 81%.
+      >> - Its Precision, Recall and F1 Scores for Non-Survivors and Survivors were consistently 87% and 81%.
   
 - However the best model for identifying Survivors was the **Class-Weighted Logistic Regression** with an overall accuracy of **83.8**.
-      - Prescision scores were 89% for Non-Survivors and 78% for Survivors.
-      - Recall scores were 83% for Non-Survivors and 85% for Survivors.
-            - While the Precision Score drops from 81% to 78%, the Recall Score rises from 81% to 85%.
-            - Meaning that while there is an increase of false positives, there is also an increase of true positives.
+      >> - Prescision scores were 89% for Non-Survivors and 78% for Survivors.
+      >> - Recall scores were 83% for Non-Survivors and 85% for Survivors.
+           >>>> - While the Precision Score drops from 81% to 78%, the Recall Score rises from 81% to 85%.
+           >>>> - Meaning that while there is an increase of false positives, there is also an increase of true positives.
 
 - **Why was the Class-Weighted model slightly more effective in identifying Survivors?**
-- It helped to address class imbalance in the dataset. Class imbalance occurs when one class is significantly underrepresented compared to the others, which can lead to biased predictions favoring the majority class. In the case of the Titanic dataset, the number of Non-Survivors is significantly more than the number Survivors making it the majority class. While the Standard Logistic Regression model did work well overall, all instances (passengers) contributed equally to the loss function. However, in the Class-Weighted model, "weights" are applied to the loss function based on the class. The weight for each class is typically inversely proportional to its frequency in the training set.
+>> - It helped to address class imbalance in the dataset. Class imbalance occurs when one class is significantly underrepresented compared to the others, which can lead to biased predictions favoring the majority class. In the case of the Titanic dataset, the number of Non-Survivors is significantly more than the number Survivors making it the majority class. While the Standard Logistic Regression model did work well overall, all instances (passengers) contributed equally to the loss function. However, in the Class-Weighted model, "weights" are applied to the loss function based on the class. The weight for each class is typically inversely proportional to its frequency in the training set.
 
 - **What is a loss function?**
-- Its a mathematical formula that measures how well or poorly a model's predictions align with the actual outcomes, quantifying the error between the predicted values, and the actual true values. For the Titanic dataset, you are trying to predict whether a passenger is a Survivor or Non-Survivor which is considered to be a binary classification task. One of the most common loss functions for such a task is called Logarithmic Loss. It is used to measure the probability of each True Label within the dataset, or in our case each instance of a passenger correctly being identified as a Survivor or Non-Survivor. Essentially it penalizes the model for having false negatives and false positives, the more there are the lower the score.
+>> - Its a mathematical formula that measures how well or poorly a model's predictions align with the actual outcomes, quantifying the error between the predicted values, and the actual true values. For the Titanic dataset, you are trying to predict whether a passenger is a Survivor or Non-Survivor which is considered to be a binary classification task. One of the most common loss functions for such a task is called Logarithmic Loss. It is used to measure the probability of each True Label within the dataset, or in our case each instance of a passenger correctly being identified as a Survivor or Non-Survivor. Essentially it penalizes the model for having false negatives and false positives, the more there are the lower the score.
 
 ## 🛠️ Tools and Technologies
 
